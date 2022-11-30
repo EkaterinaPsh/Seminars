@@ -10,16 +10,10 @@ int c = Convert.ToInt32(Console.ReadLine());
 
 int max = a;
 
-if (a < b && b > c) max = b;
-else if (b < a && a > c) max = a;
-else if (b < c && c > a) max = c;
+if (a <= b && b >= c) max = b;
+else if (b <= a && a >= c) max = a;
+else if (b <= c && c >= a) max = c;
 
-
-else
-{
-
-  Console.WriteLine("Два числа равны или все числа равны, наибольшее равно: " + max, "max = {0}", max);
-}
 
 
 
